@@ -1,7 +1,5 @@
-rootProject.name = 'commentupdater'
+rootProject.name = 'methodupdateminer'
 include(
-        'comment-updater-core',
-        'comment-updater-plugin',
-        'comment-updater-headless',
-        'comment-updater-postprocessing'
+        'miner-core',
+        'miner-headless',
 )

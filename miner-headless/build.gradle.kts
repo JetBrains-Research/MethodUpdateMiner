@@ -2,7 +2,7 @@ group = rootProject.group
 version = rootProject.version
 
 dependencies {
-    implementation(project(":comment-updater-core"))
+    implementation(project(":miner-core"))
     implementation("com.beust:klaxon:5.5")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
     implementation("com.github.ajalt:clikt:2.8.0")
@@ -36,7 +36,7 @@ open class IOCliTask : org.jetbrains.intellij.tasks.RunIdeTask() {
 }
 
 tasks {
-    register<IOCliTask>("runCommentUpdater") {
+    register<IOCliTask>("runMiner") {
         dependsOn("buildPlugin")
         args = listOfNotNull(
             runner,

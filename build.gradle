@@ -5,7 +5,6 @@ plugins {
     id "io.gitlab.arturbosch.detekt" version "1.17.0"
 }
 
-group = "org.jetbrains.research.commentupdater"
 version = "1.0"
 
 allprojects {
@@ -23,7 +22,6 @@ allprojects {
         buildUponDefaultConfig = true
         autoCorrect = true
     }
-
 
     repositories {
         mavenCentral()

@@ -16,4 +16,4 @@ fi
 "$DIR/gradlew" -p "$DIR" clean
 echo "DIR $DIR"
 echo "PWD $PWD"
-"$DIR/gradlew" -p "$DIR" runCommentUpdater -Prunner="CommentUpdater" -Pdataset="$PWD/$1" -Poutput="$PWD/$2" -PstatsOutput="$PWD/$3" --stacktrace
+"$DIR/gradlew" -p "$DIR" runMiner -Prunner="CommentUpdater" -Pdataset="$PWD/$1" -Poutput="$PWD/$2" -PstatsOutput="$PWD/$3" --stacktrace
