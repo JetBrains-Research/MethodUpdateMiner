@@ -9,7 +9,6 @@ import com.intellij.psi.JavaRecursiveElementVisitor
 import com.intellij.psi.PsiFileFactory
 import com.intellij.psi.PsiMethod
 import com.intellij.psi.javadoc.PsiDocComment
-import org.miner.processors.CodeCommentDiffs
 import org.miner.utils.qualifiedName
 
 object MethodChangesExtractor {
