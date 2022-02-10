@@ -22,8 +22,6 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import org.eclipse.jgit.lib.Repository
 import org.jetbrains.research.commentupdater.dataset.RawDatasetSample
-import org.jetbrains.research.commentupdater.models.MetricsCalculator
-import org.jetbrains.research.commentupdater.models.config.ModelFilesConfig
 import org.jetbrains.research.commentupdater.processors.ProjectMethodExtractor
 import org.jetbrains.research.commentupdater.processors.RefactoringExtractor
 import org.jetbrains.research.commentupdater.utils.PsiUtils
@@ -49,15 +47,12 @@ class CodeCommentExtractor : CliktCommand() {
 
     private val dataset by argument(help = "Path to dataset").file(mustExist = true, canBeDir = false)
     private val output by argument(help = "Output directory").file(canBeFile = false)
-    private val config by argument(help = "Model config").file(canBeFile = false)
     private val statsOutput by argument(help = "Output file for statistic").file(canBeDir = false)
 
     lateinit var rawSampleWriter: RawSampleWriter
     lateinit var statisticWriter: StatisticWriter
 
     private val statsHandler = StatisticHandler()
-
-    private lateinit var metricsModel: MetricsCalculator
 
     private val gitService = GitServiceImpl()
     private val miner = GitHistoryRefactoringMinerImpl()
@@ -101,8 +96,6 @@ class CodeCommentExtractor : CliktCommand() {
         log(LogLevel.INFO, "Starting Application")
 
         val inputFile = dataset
-
-        metricsModel = MetricsCalculator(ModelFilesConfig(config))
 
         rawSampleWriter = RawSampleWriter(output)
         statisticWriter = StatisticWriter(statsOutput)

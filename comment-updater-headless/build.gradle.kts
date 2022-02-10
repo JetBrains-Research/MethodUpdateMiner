@@ -12,12 +12,13 @@ dependencies {
 open class IOCliTask : org.jetbrains.intellij.tasks.RunIdeTask() {
     @get:Input
     val runner: String? by project
+
     @get:Input
     val dataset: String? by project
+
     @get:Input
     val output: String? by project
-    @get:Input
-    val config: String? by project
+
     @get:Input
     val statsOutput: String? by project
 
@@ -41,7 +42,6 @@ tasks {
             runner,
             dataset?.let { it },
             output?.let { it },
-            config?.let { it },
             statsOutput?.let { it }
         )
     }

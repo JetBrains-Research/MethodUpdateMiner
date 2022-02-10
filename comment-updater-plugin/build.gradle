@@ -1,6 +1,0 @@
-group = rootProject.group
-version = rootProject.version
-
-dependencies {
-    implementation(project(":comment-updater-core"))
-}
