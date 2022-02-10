@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ $# -ne "3" ]; then
-  echo "usage: ./comment_update_miner.sh <path to project list file> <path to output folder> <path to statistic output>"
+  echo "usage: ./run_miner.sh <path to project list file> <path to output folder> <path to statistic output>"
   exit 1
 fi
 
@@ -16,4 +16,4 @@ fi
 "$DIR/gradlew" -p "$DIR" clean
 echo "DIR $DIR"
 echo "PWD $PWD"
-"$DIR/gradlew" -p "$DIR" runMiner -Prunner="CommentUpdater" -Pdataset="$PWD/$1" -Poutput="$PWD/$2" -PstatsOutput="$PWD/$3" --stacktrace
+"$DIR/gradlew" -p "$DIR" runMiner -Prunner="Miner" -Pdataset="$PWD/$1" -Poutput="$PWD/$2" -PstatsOutput="$PWD/$3" --stacktrace

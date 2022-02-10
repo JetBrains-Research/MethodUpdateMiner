@@ -35,7 +35,7 @@ import kotlin.system.exitProcess
 
 
 class PluginRunner : ApplicationStarter {
-    override fun getCommandName(): String = "CommentUpdater"
+    override fun getCommandName(): String = "Miner"
 
     override fun main(args: Array<String>) {
         CodeCommentExtractor().main(args.drop(1))
