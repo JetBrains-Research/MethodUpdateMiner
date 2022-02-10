@@ -1,4 +1,4 @@
-package org.jetbrains.research.commentupdater.processors
+package org.miner.processors
 
 import com.intellij.ide.highlighter.JavaFileType
 import com.intellij.openapi.diagnostic.Logger
@@ -9,8 +9,8 @@ import com.intellij.psi.JavaRecursiveElementVisitor
 import com.intellij.psi.PsiFileFactory
 import com.intellij.psi.PsiMethod
 import com.intellij.psi.javadoc.PsiDocComment
-import org.jetbrains.research.commentupdater.CodeCommentDiffs
-import org.jetbrains.research.commentupdater.utils.qualifiedName
+import org.miner.processors.CodeCommentDiffs
+import org.miner.utils.qualifiedName
 
 object MethodChangesExtractor {
     private val LOG: Logger =

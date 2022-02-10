@@ -1,4 +1,4 @@
-package org.jetbrains.research.commentupdater.processors
+package org.miner.processors
 
 import com.intellij.openapi.diagnostic.Logger
 import com.intellij.openapi.vcs.VcsException

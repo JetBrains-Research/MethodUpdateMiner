@@ -1,4 +1,4 @@
-package org.jetbrains.research.commentupdater.processors
+package org.miner.processors
 
 import com.intellij.psi.PsiComment
 import com.intellij.psi.PsiMethod

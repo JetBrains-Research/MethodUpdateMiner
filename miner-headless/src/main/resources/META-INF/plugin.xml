@@ -1,17 +1,13 @@
 <idea-plugin>
-    <id>org.jetbrains.research.commentupdater</id>
-    <name>CommentUpdater</name>
-    <vendor>url="https://research.jetbrains.org/">JetBrains Research</vendor>
+    <id>org.miner</id>
+    <name>Miner</name>
+    <vendor>Anonymous authors</vendor>
 
-    <description><![CDATA[
-     Detects outdated comments in Java code and suggests updates for them.
-    ]]>
-    </description>
+    <description>Finds method changes in Java code from Git history of repository.</description>
 
     <depends>com.intellij.modules.java</depends>
 
     <depends>Git4Idea</depends>
-
 
     <extensions defaultExtensionNs="com.intellij">
         <appStarter implementation="PluginRunner"/>

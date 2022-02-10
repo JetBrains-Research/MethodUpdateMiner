@@ -1,4 +1,4 @@
-package org.jetbrains.research.commentupdater.utils
+package org.miner.utils
 
 import gr.uom.java.xmi.diff.*
 import org.refactoringminer.api.Refactoring

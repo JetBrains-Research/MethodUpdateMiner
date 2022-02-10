@@ -1,4 +1,4 @@
-rootProject.name = 'methodupdateminer'
+rootProject.name = 'miner'
 include(
         'miner-core',
         'miner-headless',

@@ -1,4 +1,4 @@
-package org.jetbrains.research.commentupdater.processors
+package org.miner.processors
 
 import com.intellij.ide.highlighter.JavaFileType
 import com.intellij.openapi.application.ApplicationManager
@@ -10,12 +10,12 @@ import com.intellij.psi.PsiMethod
 import com.intellij.psi.PsiModifier.ABSTRACT
 import com.intellij.psi.util.PsiTreeUtil
 import gr.uom.java.xmi.diff.MoveOperationRefactoring
-import org.jetbrains.research.commentupdater.dataset.MethodUpdateType
-import org.jetbrains.research.commentupdater.utils.MethodNameWithParam
-import org.jetbrains.research.commentupdater.utils.RefactoringUtils
-import org.jetbrains.research.commentupdater.utils.qualifiedName
-import org.jetbrains.research.commentupdater.utils.textWithoutDoc
-import org.jetbrains.research.commentupdater.utils.nameWithParams
+import org.miner.dataset.MethodUpdateType
+import org.miner.utils.MethodNameWithParam
+import org.miner.utils.RefactoringUtils
+import org.miner.utils.qualifiedName
+import org.miner.utils.textWithoutDoc
+import org.miner.utils.nameWithParams
 import org.refactoringminer.api.Refactoring
 import org.refactoringminer.api.RefactoringType
 

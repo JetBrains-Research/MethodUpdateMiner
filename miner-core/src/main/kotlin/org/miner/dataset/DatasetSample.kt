@@ -1,4 +1,4 @@
-package org.jetbrains.research.commentupdater.dataset
+package org.miner.dataset
 
 import com.beust.klaxon.Json
 

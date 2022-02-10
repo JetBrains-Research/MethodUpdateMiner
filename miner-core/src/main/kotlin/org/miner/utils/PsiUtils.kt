@@ -1,4 +1,4 @@
-package org.jetbrains.research.commentupdater.utils
+package org.miner.utils
 
 import com.intellij.execution.configurations.PathEnvironmentVariableUtil
 import com.intellij.openapi.diagnostic.Logger
