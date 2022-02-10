@@ -14,7 +14,7 @@ Tool that allows mining method changes in code Java projects by analyzing histor
 2. Path to the directory where resulting files with code-comment samples would be written.
 3. Path to .JSON file where the statistics on the collected data would be saved.
 
-Example run
+Example run:
 ```shell
 ./run_miner.sh projects.txt outputs/ stats.json
 ```
