@@ -1,8 +1,8 @@
-#MethodUpdateMiner
+MethodUpdateMiner
 
 Tool that allows mining method changes in code Java projects by analyzing history of Git repositories.
 
-##Usage
+Usage:
 1. Path to the file containing absolute paths to the projects, which you want to process, separated with `\n`. 
      
      Example:
